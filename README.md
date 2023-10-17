@@ -1,1 +1,11 @@
-# latihanVCS
+Langkah dalam pengguanaan git vcs adalah sebagai berikut: 
+(1) Download Git, buka website resminya Git (git-scm.com) kemudian unduh Git, setelah diinstall untuk mencobanya buka CMD kemudian masukkan perintah git --version. 
+(2) Buat akun github dengan membuka web resminya GitHub (https://github.com/), jika sudah memiliki akun pilihlah sign in lalu masukkan email dan password sesuai akun yang sudah dibuat, jika belum memiliki akun maka pilihlah sign up lalu masukkan email dan password baru untuk akun GitHub lalu buat username akun GitHub. 
+(3) Membuat reposiory local, buka directory aktif misal: C:/bahasa_pemrograman, klik kanan pilih menu Git Bash, lalu buat project praktikun dengan nama latihanVCS dengan memasukkan perintah: $mkdir latihanVCS, $cd latihanVCS. sehingga berbentuk directory dengan perintah cd(change directory) directory aktif menjadi C:/bahasa_pemrograman/latihanVCS.
+(4) Membuat reseposiory local, jalankan perintah $git init, repository baru berhasil diinisialisasi, dengan terbentuknya directory hidden dengan nama git.
+(5) Menambahkan file baru pada repository, contoh nama file yang akan dicoba adalah $ echo "# latihanVCS" >> README.md", setelah berhasil dibuat untuk menambahkan file gunakan perintah $git add README.md .
+(6) Menyimpan perubahan ke database(commit), untuk menyimpan perubahan yang ada kedalam database repository local, gunakan perintah $ git commit -"komentar commit", perubahan berhasil disimpan.
+(7) Membuat repository server, masuk ke akun GitHub yang sebelumnya sudah kita buat, pada menu (icon +) klik new repository,lalu isi nama repository, misal: latihanVCS, lalu klik tombol create repository.
+(8) Menambahkan remote repository, yang nantinya akan digunakan untuk menyimpan sebuah perubahan pada local repository sehingga dapat diakses oleh banyak user, untuk menambahkannya gunakan perintah $ git remote add origin https://github.com/Gladis32/latihanVCS.git (url).
+(9) Mengirim perubahan ke server (push), untuk mengirim perubahan pada local repository ke server gunakan  perintah git pus $ git push -u origin master, perintah ini akan meminta memasukkan username dan password pada akun github.com, untuk melihat hasilnya pada server repository buka laman githb.com arahkan pada repositorynya maka perubahan akan terlihat pada laman tersebut.
+
